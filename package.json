@@ -9,7 +9,6 @@
     "lint:fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write .",
     "storybook": "start-storybook -p 6006",
-    "storybook:docker": "start-storybook -p 6006 --ci --quiet",
     "build-storybook": "build-storybook"
   },
   "husky": {
