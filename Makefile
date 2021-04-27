@@ -1,5 +1,5 @@
-.PHONY: init
-init:
+.PHONY: i
+i:
 	docker-compose run --rm app yarn
 
 .PHONY: up
@@ -17,10 +17,6 @@ sb:
 .PHONY: down
 down:
 	docker-compose down
-
-.PHONY: i
-i:
-	docker-compose run --rm app yarn install
 
 .PHONY: logs
 logs:
