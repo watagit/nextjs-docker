@@ -1,10 +1,18 @@
+.PHONY: init
+init:
+	docker-compose run --rm app yarn
+
 .PHONY: up
 up:
-	docker-compose up
+	docker-compose run --rm -p 3000:3000 app yarn dev
 
 .PHONY: upd
 upd:
 	docker-compose up -d
+
+.PHONY: sb
+sb:
+	docker-compose run --rm -p 6006:6006 app yarn storybook
 
 .PHONY: down
 down:
