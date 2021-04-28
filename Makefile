@@ -1,5 +1,5 @@
 i:
-	docker-compose run --rm app yarn
+	docker-compose build
 
 up:
 	docker-compose up
