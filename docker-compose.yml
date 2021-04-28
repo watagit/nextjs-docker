@@ -11,3 +11,15 @@ services:
     volumes:
       - /app/node_modules
       - .:/app
+  storybook:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: "yarn storybook:docker"
+    ports:
+      - 6006:6006
+    volumes:
+      - /app/node_modules
+      - .:/app
+    environment:
+      - NODE_ENV=development
